@@ -1,6 +1,10 @@
 import React from 'react';
 import Parse from 'parse/dist/parse.min.js';
 import { Product } from './Product';
+import { Badge, Button } from 'react-bootstrap';
+import './App.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const PARSE_APPLICATION_ID = 'hneoElPiCrws1omd2U77pL4G4rAwJ3AJDFkuH59u';
 const PARSE_HOST_URL = 'https://parseapi.back4app.com/';
@@ -11,6 +15,7 @@ Parse.serverURL = PARSE_HOST_URL;
 function App() {
   return (
     <div className="App">
+
       <Product />
     </div>
   );
